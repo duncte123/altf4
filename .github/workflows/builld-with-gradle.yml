@@ -22,7 +22,11 @@ jobs:
       - name: Execute Gradle build
         run: ./gradlew build
 
-      - uses: actions/upload-artifact@v3
+      - uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          name: altf4.jar
-          path: build/libs/altf4-1.0-SNAPSHOT-all.jar
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: true
+          title: "Development Build ${{ env.GITHUB_RUN_NUMBER }}"
+          files: |
+            build/libs/altf4-1.0-SNAPSHOT-all.jar
