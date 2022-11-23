@@ -7,5 +7,7 @@
 5. Put the following in aitum as command `java -jar (location of jar, WITH QUOTES) a b c`
 6. Run the rule, this will press the a, b and c keys on your keyboard and release them after a second
 
+![input in aitum](https://im.going-g.host/fmHuD6xgMq.png)
+
 ## Key not pressing
 Some special keys are not supported by default, let me know if a key you want is missing and I'll add it asap.
